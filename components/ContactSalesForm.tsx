@@ -88,7 +88,7 @@ export default function ContactSalesForm({ brands }: { brands: QuoteBrand[] }) {
         // Mock mode for frontend-only development.
         await new Promise((r) => setTimeout(r, 700));
       } else {
-        const res = await fetch(`${apiUrl}/api/contact-sales/`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+        const res = await fetch(`${apiUrl}/saverpe/contact-sales/`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
         const body = await res.json().catch(() => null);
         if (!res.ok || body?.success === false) {
           if (body?.errors) setErrors(Object.fromEntries(Object.entries(body.errors as Record<string, string[]>).map(([k, v]) => [k, Array.isArray(v) ? String(v[0]) : String(v)])));
