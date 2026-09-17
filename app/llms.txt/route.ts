@@ -26,6 +26,8 @@ export function GET() {
     `- [Why Orbit](${absoluteUrl("/why-orbit")}): enterprise features and comparison with hampers and cash`,
     `- [FAQs](${absoluteUrl("/faq")}): ordering, billing, GST and employee gift tax`,
     `- [Case studies](${absoluteUrl("/case-studies")}): illustrative program examples`,
+    `- [Corporate gifting glossary](${absoluteUrl("/glossary")}): definitions of bulk gift cards, spot awards, channel incentives, GST and more`,
+    `- [Editorial policy](${absoluteUrl("/editorial-policy")}): how insights are researched and updated`,
     `- [Full content for LLMs](${absoluteUrl("/llms-full.txt")})`,
     "",
     "## Solutions",

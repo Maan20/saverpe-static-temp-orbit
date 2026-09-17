@@ -39,3 +39,10 @@
 
 - [ ] Set `NEXT_PUBLIC_LEADS_API_URL` (for example `https://api.saverpe.com`), analytics and search console tokens.
 - [ ] Submit `https://orbit.saverpe.com/sitemap.xml` to search consoles.
+
+## SEO additions (review before launch)
+- **/editorial-policy** describes the review process. Make sure it reflects reality.
+- **/glossary**: the perquisite-tax and GST definitions are deliberately general. Get finance/tax to review them.
+- **Brand key facts** are pulled automatically from brand T&Cs by `lib/brand-facts.ts`. Spot-check the top brands.
+- **IndexNow:** set `INDEXNOW_KEY`, deploy, then run `INDEXNOW_KEY=… node ../scripts/indexnow.mjs https://orbit.saverpe.com`.
+- Submit `/sitemap.xml` in Google Search Console and Bing Webmaster Tools.

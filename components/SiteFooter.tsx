@@ -65,12 +65,14 @@ export default function SiteFooter() {
             <FooterLink href="/case-studies">Case studies</FooterLink>
             <FooterLink href="/blog">Insights blog</FooterLink>
             <FooterLink href="/faq">FAQs</FooterLink>
+            <FooterLink href="/glossary">Gifting glossary</FooterLink>
           </FooterCol>
 
           <FooterCol title="Company">
             <FooterLink href="/about-us">About Orbit</FooterLink>
             <FooterLink href="/why-orbit">Why Orbit</FooterLink>
             <FooterLink href="/contact-sales">Contact sales</FooterLink>
+            <FooterLink href="/editorial-policy">Editorial policy</FooterLink>
             <FooterLink href="/privacy-policy">Privacy policy</FooterLink>
             <FooterLink href="/terms-of-service">Terms of service</FooterLink>
             <li>
