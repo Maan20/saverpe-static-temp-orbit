@@ -44,6 +44,16 @@ export default function SolutionsPage() {
           );
         })}
       </section>
+      <section className="container-page mt-12">
+        <Link href="/api-integration" className="card flex flex-col gap-3 bg-ink p-8 text-white transition hover:border-magenta sm:flex-row sm:items-center sm:justify-between">
+          <span>
+            <span className="text-xs font-bold uppercase tracking-widest text-magenta">Early access</span>
+            <span className="mt-1 block font-display text-2xl font-extrabold">API &amp; SDK Integration</span>
+            <span className="mt-1 block text-white/70">Automate any of these programs from your HRMS, CRM or app.</span>
+          </span>
+          <span className="btn-primary shrink-0">Explore the API <ArrowRight className="size-4" aria-hidden /></span>
+        </Link>
+      </section>
       <CtaBand title="Not sure which program fits?" text="Tell us your goal and audience — we'll recommend a structure, brand menu and budget." primary={{ href: "/contact-sales", label: "Talk to our team" }} secondary={{ href: "/case-studies", label: "See examples" }} />
     </>
   );

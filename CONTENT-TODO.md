@@ -10,6 +10,7 @@
   - "Reply within 1 business day"
   - Security wording on `/why-orbit` (certifications are deliberately not claimed)
   - "API-ready roadmap" (worded as roadmap only; no live API is claimed)
+- [ ] **API & SDK Integration** (`/api-integration`, "What we provide" cards): marked **Early access**, with planned capabilities (catalog, orders, webhooks, SDKs) and an illustrative request. Update the page, remove the badge and link real docs once the API is live.
 - [ ] **About page story** (`app/about-us/page.tsx`): add real history, leadership and milestones.
 - [ ] **Industry pages** (`content/industries.ts`): make sure the regulatory mentions (IRDAI, RBI, pharma codes) match your compliance guidance.
 

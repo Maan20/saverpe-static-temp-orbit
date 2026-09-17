@@ -1,8 +1,22 @@
+/**
+ * Reads a URL from an env var, falling back when it is unset, empty or invalid
+ * (e.g. an empty value in the hosting dashboard). Adds https:// if the scheme is missing.
+ */
+function envUrl(value: string | undefined, fallback: string) {
+  const raw = value?.trim();
+  if (!raw) return fallback;
+  try {
+    return new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`).origin;
+  } catch {
+    return fallback;
+  }
+}
+
 export const site = {
   name: "Orbit by SaverPe",
   shortName: "Orbit",
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://orbit.saverpe.com").replace(/\/$/, ""),
-  consumerUrl: (process.env.NEXT_PUBLIC_CONSUMER_URL ?? "https://saverpe.com").replace(/\/$/, ""),
+  url: envUrl(process.env.NEXT_PUBLIC_SITE_URL, "https://orbit.saverpe.com"),
+  consumerUrl: envUrl(process.env.NEXT_PUBLIC_CONSUMER_URL, "https://saverpe.com"),
   email: "contact@saverpe.com",
   tagline: "Corporate gifting and rewards, at scale",
   description:

@@ -16,7 +16,7 @@ const caseSlugs = slugsFrom("content/case-studies.ts", /^\s{4}slug: "([^"]+)"/gm
 const blogCats = slugsFrom("lib/blog.ts", /\{ id: "([^"]+)", name:/g);
 
 const valid = new Set([
-  "/", "/solutions", "/industries", "/brands", "/why-orbit", "/how-it-works", "/case-studies", "/about-us", "/faq", "/contact-sales", "/blog", "/privacy-policy", "/terms-of-service", "/blog/rss.xml", "/llms.txt", "/llms-full.txt",
+  "/", "/solutions", "/industries", "/brands", "/why-orbit", "/api-integration", "/how-it-works", "/case-studies", "/about-us", "/faq", "/contact-sales", "/blog", "/privacy-policy", "/terms-of-service", "/blog/rss.xml", "/llms.txt", "/llms-full.txt",
   ...brands.map((b) => `/brands/${b.slug}`), ...blogSlugs.map((s) => `/blog/${s}`), ...solutionSlugs.map((s) => `/solutions/${s}`), ...industrySlugs.map((s) => `/industries/${s}`), ...caseSlugs.map((s) => `/case-studies/${s}`), ...blogCats.map((c) => `/blog/category/${c}`),
 ]);
 

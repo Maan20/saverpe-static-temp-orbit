@@ -22,6 +22,7 @@ export function GET() {
     `- [Contact sales / request a quote](${absoluteUrl("/contact-sales")}): multi-brand quote builder`,
     `- [Brand catalog](${absoluteUrl("/brands")}): all brands available for bulk orders`,
     `- [How it works](${absoluteUrl("/how-it-works")}): ordering process and timelines`,
+    `- [API & SDK Integration](${absoluteUrl("/api-integration")}): early-access gift card API, SDKs and webhooks for automating rewards`,
     `- [Why Orbit](${absoluteUrl("/why-orbit")}): enterprise features and comparison with hampers and cash`,
     `- [FAQs](${absoluteUrl("/faq")}): ordering, billing, GST and employee gift tax`,
     `- [Case studies](${absoluteUrl("/case-studies")}): illustrative program examples`,

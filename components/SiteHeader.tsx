@@ -12,7 +12,7 @@ export default function SiteHeader() {
         <div className="container-page flex h-10 items-center justify-between gap-4 text-xs font-medium">
           <p className="flex items-center gap-2 truncate">
             <Building className="size-3.5 shrink-0" aria-hidden />
-            <span className="truncate">Bulk e-gift cards from 290+ brands · Multi-brand orders · GST-ready invoicing</span>
+            <span className="truncate">Corporate Gifting · Bulk Gift Cards · Employee & Channel Rewards · Customer Loyalty · API & SDK</span>
           </p>
           <a href={site.consumerUrl} className="hidden shrink-0 items-center gap-1 font-bold text-white/90 hover:text-white sm:inline-flex">
             Personal gifting: SaverPe <ArrowUpRight className="size-3.5" aria-hidden />

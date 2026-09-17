@@ -2,7 +2,6 @@ import Link from "next/link";
 import NextImage from "next/image";
 import { ArrowUpRight, FileText, Layers, Mail, ShieldCheck } from "lucide-react";
 import { site } from "@/lib/site";
-import { solutions } from "@/content/solutions";
 import { industries } from "@/content/industries";
 
 export default function SiteFooter() {
@@ -45,10 +44,13 @@ export default function SiteFooter() {
             </a>
           </div>
 
-          <FooterCol title="Solutions">
-            {solutions.map((s) => (
-              <FooterLink key={s.slug} href={`/solutions/${s.slug}`}>{s.shortName}</FooterLink>
-            ))}
+          <FooterCol title="What we provide">
+            <FooterLink href="/solutions">Corporate Gifting</FooterLink>
+            <FooterLink href="/brands">Bulk Gift Cards</FooterLink>
+            <FooterLink href="/solutions/employee-rewards-recognition">Employee Rewards</FooterLink>
+            <FooterLink href="/solutions/channel-partner-incentives">Channel Partner Rewards</FooterLink>
+            <FooterLink href="/solutions/customer-loyalty-rewards">Customer Loyalty</FooterLink>
+            <FooterLink href="/api-integration">API &amp; SDK Integration</FooterLink>
           </FooterCol>
 
           <FooterCol title="Industries">

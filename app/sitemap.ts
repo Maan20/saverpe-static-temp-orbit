@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/industries", 0.8, "monthly"),
     page("/brands", 0.9, "weekly"),
     page("/why-orbit", 0.8, "monthly"),
+    page("/api-integration", 0.8, "monthly"),
     page("/how-it-works", 0.7, "monthly"),
     page("/case-studies", 0.7, "monthly"),
     page("/about-us", 0.6, "monthly"),

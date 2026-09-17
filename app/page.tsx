@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { ArrowRight, BadgeCheck, CalendarClock, ChartColumn, CircleCheck, Code, FileText, Globe, Layers, Mail, Quote, ShieldCheck, ShoppingCart, UserCheck, Zap } from "lucide-react";
 import Image from "@/components/Image";
 import BlogCard from "@/components/BlogCard";
+import BusinessServices from "@/components/BusinessServices";
 import JsonLd from "@/components/JsonLd";
 import { CtaBand, FaqList, SectionHeading } from "@/components/ui";
 import { categoryIcons, categoryTints, solutionIcons } from "@/components/icons";
@@ -120,6 +121,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* WHAT WE PROVIDE */}
+      <BusinessServices />
+
       {/* VALUE PROPS */}
       <section className="container-page mt-24">
         <SectionHeading align="center" eyebrow="Why companies choose Orbit" title="Everything a modern gifting program needs" intro="From a 20-person startup to a 20,000-person enterprise — Orbit removes the logistics so you can focus on the people." />
@@ -130,7 +134,7 @@ export default function HomePage() {
             { icon: UserCheck, t: "Dedicated account management", d: "A single point of contact to plan programs, recommend brand menus and coordinate fulfilment." },
             { icon: Zap, t: "Digital delivery, pan-India", d: "No warehousing, packing or couriers. Rewards reach office, hybrid and remote employees on the same day." },
             { icon: ShieldCheck, t: "Genuine brand-issued cards", d: "Every card is issued by the brand or its authorised gift card program partner, with brand terms clearly documented." },
-            { icon: Code, t: "API-ready roadmap", d: "An API for automated reward fulfilment is on our roadmap — register interest to get early access." },
+            { icon: Code, t: "API & SDK integration", d: "Automate reward delivery from your HRMS, CRM or app — now in early access." },
           ].map((f) => (
             <div key={f.t} className="card group p-7 transition hover:-translate-y-1 hover:border-brand">
               <span className="grid size-12 place-items-center rounded-2xl bg-brand-50 text-brand transition group-hover:bg-orbit group-hover:text-white">
